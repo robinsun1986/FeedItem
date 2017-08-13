@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49F179D31F4010FC00243085 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F179D21F4010FC00243085 /* AppDelegate.swift */; };
+		49F179D51F4010FC00243085 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F179D41F4010FC00243085 /* ViewController.swift */; };
+		49F179D81F4010FC00243085 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F179D61F4010FC00243085 /* Main.storyboard */; };
+		49F179DA1F4010FC00243085 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F179D91F4010FC00243085 /* Assets.xcassets */; };
+		49F179DD1F4010FC00243085 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F179DB1F4010FC00243085 /* LaunchScreen.storyboard */; };
+		49F179E81F4010FC00243085 /* PacteraCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F179E71F4010FC00243085 /* PacteraCodeChallengeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49F179E41F4010FC00243085 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49F179C71F4010FC00243085 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49F179CE1F4010FC00243085;
+			remoteInfo = PacteraCodeChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49F179CF1F4010FC00243085 /* PacteraCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PacteraCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49F179D21F4010FC00243085 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49F179D41F4010FC00243085 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49F179D71F4010FC00243085 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49F179D91F4010FC00243085 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49F179DC1F4010FC00243085 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49F179DE1F4010FC00243085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49F179E31F4010FC00243085 /* PacteraCodeChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PacteraCodeChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49F179E71F4010FC00243085 /* PacteraCodeChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacteraCodeChallengeTests.swift; sourceTree = "<group>"; };
+		49F179E91F4010FC00243085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49F179CC1F4010FC00243085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49F179E01F4010FC00243085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49F179C61F4010FC00243085 = {
+			isa = PBXGroup;
+			children = (
+				49F179D11F4010FC00243085 /* PacteraCodeChallenge */,
+				49F179E61F4010FC00243085 /* PacteraCodeChallengeTests */,
+				49F179D01F4010FC00243085 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49F179D01F4010FC00243085 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49F179CF1F4010FC00243085 /* PacteraCodeChallenge.app */,
+				49F179E31F4010FC00243085 /* PacteraCodeChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49F179D11F4010FC00243085 /* PacteraCodeChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				49F179D21F4010FC00243085 /* AppDelegate.swift */,
+				49F179D41F4010FC00243085 /* ViewController.swift */,
+				49F179D61F4010FC00243085 /* Main.storyboard */,
+				49F179D91F4010FC00243085 /* Assets.xcassets */,
+				49F179DB1F4010FC00243085 /* LaunchScreen.storyboard */,
+				49F179DE1F4010FC00243085 /* Info.plist */,
+			);
+			path = PacteraCodeChallenge;
+			sourceTree = "<group>";
+		};
+		49F179E61F4010FC00243085 /* PacteraCodeChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				49F179E71F4010FC00243085 /* PacteraCodeChallengeTests.swift */,
+				49F179E91F4010FC00243085 /* Info.plist */,
+			);
+			path = PacteraCodeChallengeTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49F179CE1F4010FC00243085 /* PacteraCodeChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49F179EC1F4010FC00243085 /* Build configuration list for PBXNativeTarget "PacteraCodeChallenge" */;
+			buildPhases = (
+				49F179CB1F4010FC00243085 /* Sources */,
+				49F179CC1F4010FC00243085 /* Frameworks */,
+				49F179CD1F4010FC00243085 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PacteraCodeChallenge;
+			productName = PacteraCodeChallenge;
+			productReference = 49F179CF1F4010FC00243085 /* PacteraCodeChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49F179E21F4010FC00243085 /* PacteraCodeChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49F179EF1F4010FC00243085 /* Build configuration list for PBXNativeTarget "PacteraCodeChallengeTests" */;
+			buildPhases = (
+				49F179DF1F4010FC00243085 /* Sources */,
+				49F179E01F4010FC00243085 /* Frameworks */,
+				49F179E11F4010FC00243085 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49F179E51F4010FC00243085 /* PBXTargetDependency */,
+			);
+			name = PacteraCodeChallengeTests;
+			productName = PacteraCodeChallengeTests;
+			productReference = 49F179E31F4010FC00243085 /* PacteraCodeChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49F179C71F4010FC00243085 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Pactera;
+				TargetAttributes = {
+					49F179CE1F4010FC00243085 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					49F179E21F4010FC00243085 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 49F179CE1F4010FC00243085;
+					};
+				};
+			};
+			buildConfigurationList = 49F179CA1F4010FC00243085 /* Build configuration list for PBXProject "PacteraCodeChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49F179C61F4010FC00243085;
+			productRefGroup = 49F179D01F4010FC00243085 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49F179CE1F4010FC00243085 /* PacteraCodeChallenge */,
+				49F179E21F4010FC00243085 /* PacteraCodeChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49F179CD1F4010FC00243085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49F179DD1F4010FC00243085 /* LaunchScreen.storyboard in Resources */,
+				49F179DA1F4010FC00243085 /* Assets.xcassets in Resources */,
+				49F179D81F4010FC00243085 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49F179E11F4010FC00243085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49F179CB1F4010FC00243085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49F179D51F4010FC00243085 /* ViewController.swift in Sources */,
+				49F179D31F4010FC00243085 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49F179DF1F4010FC00243085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49F179E81F4010FC00243085 /* PacteraCodeChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49F179E51F4010FC00243085 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49F179CE1F4010FC00243085 /* PacteraCodeChallenge */;
+			targetProxy = 49F179E41F4010FC00243085 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49F179D61F4010FC00243085 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49F179D71F4010FC00243085 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49F179DB1F4010FC00243085 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49F179DC1F4010FC00243085 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49F179EA1F4010FC00243085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49F179EB1F4010FC00243085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49F179ED1F4010FC00243085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PacteraCodeChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.robinsun.PacteraCodeChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		49F179EE1F4010FC00243085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PacteraCodeChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.robinsun.PacteraCodeChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		49F179F01F4010FC00243085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PacteraCodeChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.robinsun.PacteraCodeChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PacteraCodeChallenge.app/PacteraCodeChallenge";
+			};
+			name = Debug;
+		};
+		49F179F11F4010FC00243085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PacteraCodeChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.robinsun.PacteraCodeChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PacteraCodeChallenge.app/PacteraCodeChallenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49F179CA1F4010FC00243085 /* Build configuration list for PBXProject "PacteraCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49F179EA1F4010FC00243085 /* Debug */,
+				49F179EB1F4010FC00243085 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49F179EC1F4010FC00243085 /* Build configuration list for PBXNativeTarget "PacteraCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49F179ED1F4010FC00243085 /* Debug */,
+				49F179EE1F4010FC00243085 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		49F179EF1F4010FC00243085 /* Build configuration list for PBXNativeTarget "PacteraCodeChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49F179F01F4010FC00243085 /* Debug */,
+				49F179F11F4010FC00243085 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49F179C71F4010FC00243085 /* Project object */;
+}
