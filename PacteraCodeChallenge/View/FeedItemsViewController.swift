@@ -68,11 +68,14 @@ class FeedItemsViewController: UIViewController, UITableViewDataSource, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FeedItemsViewModel.kCellId, for: indexPath) as! FeedItemCell
+        let feedItemViewModel = viewModel.item(at: indexPath.row)
+        cell.configure(viewModel: feedItemViewModel)
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        let feedItemViewModel = viewModel.item(at: indexPath.row)
+        return feedItemViewModel.estimatedCellHeight()
     }
     
     // MARK: - FeedItemsViewModelDelegate
