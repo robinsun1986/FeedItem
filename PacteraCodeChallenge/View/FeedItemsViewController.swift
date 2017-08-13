@@ -80,6 +80,12 @@ class FeedItemsViewController: UIViewController, UITableViewDataSource, UITableV
         viewModel.getFeedItems(isRefresh: true)
     }
     
+    func reloadVisibleCells() {
+        if let visibleRows = tableView?.indexPathsForVisibleRows {
+            tableView?.reloadRows(at: visibleRows, with: .none)
+        }
+    }
+    
     // MARK: - UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.numOfRows()
@@ -88,6 +94,7 @@ class FeedItemsViewController: UIViewController, UITableViewDataSource, UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FeedItemsViewModel.kCellId, for: indexPath) as! FeedItemCell
         let feedItemViewModel = viewModel.item(at: indexPath.row)
+        RobinWebImageManager.shared.canDownload = (!tableView.isDragging && !tableView.isDecelerating)
         cell.configure(viewModel: feedItemViewModel)
         return cell
     }
@@ -95,6 +102,17 @@ class FeedItemsViewController: UIViewController, UITableViewDataSource, UITableV
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let feedItemViewModel = viewModel.item(at: indexPath.row)
         return feedItemViewModel.estimatedCellHeight()
+    }
+    
+    // MARK: - UITableViewDelegate
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if !decelerate {
+            self.reloadVisibleCells()
+        }
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        self.reloadVisibleCells()
     }
     
     // MARK: - FeedItemsViewModelDelegate
