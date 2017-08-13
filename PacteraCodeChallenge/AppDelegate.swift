@@ -15,7 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        self.window = UIWindow()
+        self.window?.frame = UIScreen.main.bounds
+        let feedItemsVC = FeedItemsViewController()
+        let nav = UINavigationController(rootViewController: feedItemsVC)
+        self.window?.rootViewController = nav
+        UIApplication.shared.statusBarStyle = .lightContent
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
