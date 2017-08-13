@@ -21,6 +21,7 @@ class FeedItemsViewController: UIViewController, UITableViewDataSource, UITableV
         setupView()
         setupNavigationBarStyle()
         setupTableView()
+        setupPullToRefresh()
         setupViewModel()
         
         viewModel.getFeedItems()
@@ -56,9 +57,27 @@ class FeedItemsViewController: UIViewController, UITableViewDataSource, UITableV
         navigationController?.navigationBar.isTranslucent = true
     }
     
+    // setup pull to refresh
+    func setupPullToRefresh() {
+        refreshControl = UIRefreshControl()
+        refreshControl?.backgroundColor = UIColor.white
+        refreshControl?.tintColor = UIColor.lightGray
+        refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        if #available(iOS 10.0, *) {
+            tableView?.refreshControl = refreshControl
+        } else {
+            tableView?.addSubview(refreshControl!)
+        }
+    }
+    
     // setup viewmodel
     func setupViewModel() {
         viewModel.delegate = self
+    }
+    
+    // refresh
+    func refresh() {
+        viewModel.getFeedItems(isRefresh: true)
     }
     
     // MARK: - UITableViewDataSource

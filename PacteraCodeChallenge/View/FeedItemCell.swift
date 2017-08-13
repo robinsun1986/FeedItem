@@ -12,7 +12,7 @@ class FeedItemCell: UITableViewCell {
 
     var titleLabel: UILabel = UILabel()
     var descriptionLabel: UILabel = UILabel()
-    var photoImageView: UIImageView = UIImageView()
+    var photoImageView: RobinImageView = RobinImageView()
     var arrowImageView: UIImageView = UIImageView()
     var bottomConstraint: NSLayoutConstraint?
     
@@ -108,8 +108,7 @@ class FeedItemCell: UITableViewCell {
     func configure(viewModel: FeedItemViewModel) {
         titleLabel.text = viewModel.title
         descriptionLabel.text = viewModel.desc
-        // TODO load image 
-        photoImageView.image = UIImage(named: "placeholder")
+        photoImageView.setImage(url: viewModel.imageUrl, placeholerImage: UIImage(named: FeedItemViewModel.kPlaceholderImageName))
         arrowImageView.image = UIImage(named: FeedItemViewModel.kArrowImageName)
     }
 }

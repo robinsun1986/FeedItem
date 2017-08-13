@@ -35,6 +35,12 @@
 		49F17A331F40250B00243085 /* FeedItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F17A311F40250B00243085 /* FeedItemCell.swift */; };
 		49F17A351F4026CA00243085 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F17A341F4026CA00243085 /* UIUtils.swift */; };
 		49F17A361F4026CA00243085 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F17A341F4026CA00243085 /* UIUtils.swift */; };
+		49F17A3B1F402E3C00243085 /* RobinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F17A381F402E3C00243085 /* RobinImageView.swift */; };
+		49F17A3C1F402E3C00243085 /* RobinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F17A381F402E3C00243085 /* RobinImageView.swift */; };
+		49F17A3D1F402E3C00243085 /* RobinLoadImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F17A391F402E3C00243085 /* RobinLoadImageOperation.swift */; };
+		49F17A3E1F402E3C00243085 /* RobinLoadImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F17A391F402E3C00243085 /* RobinLoadImageOperation.swift */; };
+		49F17A3F1F402E3C00243085 /* RobinWebImageMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F17A3A1F402E3C00243085 /* RobinWebImageMananger.swift */; };
+		49F17A401F402E3C00243085 /* RobinWebImageMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F17A3A1F402E3C00243085 /* RobinWebImageMananger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +77,9 @@
 		49F17A2E1F4024A800243085 /* FeedItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemsViewController.swift; sourceTree = "<group>"; };
 		49F17A311F40250B00243085 /* FeedItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemCell.swift; sourceTree = "<group>"; };
 		49F17A341F4026CA00243085 /* UIUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
+		49F17A381F402E3C00243085 /* RobinImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RobinImageView.swift; sourceTree = "<group>"; };
+		49F17A391F402E3C00243085 /* RobinLoadImageOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RobinLoadImageOperation.swift; sourceTree = "<group>"; };
+		49F17A3A1F402E3C00243085 /* RobinWebImageMananger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RobinWebImageMananger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +121,7 @@
 		49F179D11F4010FC00243085 /* PacteraCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				49F17A371F402E3C00243085 /* RobinWebImage */,
 				49F17A2D1F40248300243085 /* View */,
 				49F17A1F1F40236300243085 /* ViewModel */,
 				49F179F21F4015E100243085 /* Model */,
@@ -182,6 +192,16 @@
 				49F17A2E1F4024A800243085 /* FeedItemsViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		49F17A371F402E3C00243085 /* RobinWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				49F17A381F402E3C00243085 /* RobinImageView.swift */,
+				49F17A391F402E3C00243085 /* RobinLoadImageOperation.swift */,
+				49F17A3A1F402E3C00243085 /* RobinWebImageMananger.swift */,
+			);
+			path = RobinWebImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +315,10 @@
 				49F17A351F4026CA00243085 /* UIUtils.swift in Sources */,
 				49F17A2F1F4024A800243085 /* FeedItemsViewController.swift in Sources */,
 				49F17A321F40250B00243085 /* FeedItemCell.swift in Sources */,
+				49F17A3B1F402E3C00243085 /* RobinImageView.swift in Sources */,
+				49F17A3F1F402E3C00243085 /* RobinWebImageMananger.swift in Sources */,
 				49F179FA1F40172800243085 /* FeedItemsResponse.swift in Sources */,
+				49F17A3D1F402E3C00243085 /* RobinLoadImageOperation.swift in Sources */,
 				49F179D31F4010FC00243085 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,13 +327,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F17A401F402E3C00243085 /* RobinWebImageMananger.swift in Sources */,
 				49F17A361F4026CA00243085 /* UIUtils.swift in Sources */,
 				49F17A331F40250B00243085 /* FeedItemCell.swift in Sources */,
 				49F17A301F4024A800243085 /* FeedItemsViewController.swift in Sources */,
 				49F179F61F40169900243085 /* FeedItem.swift in Sources */,
 				49F17A2C1F4023CF00243085 /* FeedItemViewModelTests.swift in Sources */,
 				49F179FD1F40174000243085 /* FeedItemsResponseTests.swift in Sources */,
+				49F17A3E1F402E3C00243085 /* RobinLoadImageOperation.swift in Sources */,
 				49F179F81F4016CF00243085 /* FeedItemTests.swift in Sources */,
+				49F17A3C1F402E3C00243085 /* RobinImageView.swift in Sources */,
 				49F17A261F40238100243085 /* FeedItemViewModel.swift in Sources */,
 				49F17A241F40238100243085 /* FeedItemsViewModel.swift in Sources */,
 				49F179E81F4010FC00243085 /* PacteraCodeChallengeTests.swift in Sources */,
